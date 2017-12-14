@@ -1,4 +1,4 @@
-# Pauliceia 2.0
+# Pauliceia 2.0 [![Build Status](https://travis-ci.org/ivandardi/pauliceia.svg?branch=master)](https://travis-ci.org/ivandardi/pauliceia)
 
 ## How to run
 

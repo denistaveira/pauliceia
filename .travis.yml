@@ -17,8 +17,9 @@ env:
 
 before_script:
   - psql -c 'create database pauliceia_db_test;' -U postgres
+  - cd backend
+  - yarn
 
 script:
-  - cd backend
-  - npm run test
+  - yarn run test
 
