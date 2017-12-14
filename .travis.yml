@@ -1,0 +1,24 @@
+language:
+  - node_js
+
+node_js:
+  - '9'
+
+services:
+  - postgresql
+
+addons:
+  postgresql: '9.6'
+
+env:
+  global:
+    - NODE_ENV=test
+    - export DATABASE_TEST_URL=postgresql://localhost/pauliceia_db_test
+
+before_script:
+  - psql -c 'create database pauliceia_db_test;' -U postgres
+
+script:
+  - cd backend
+  - npm run test
+
